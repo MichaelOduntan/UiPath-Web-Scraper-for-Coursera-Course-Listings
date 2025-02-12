@@ -1,0 +1,1 @@
+This project automates web scraping of Coursera course listings related to UiPath using UiPath Studio. The extracted data is saved in an Excel file for further analysis. The automation navigates to the Coursera search results page, extracts table data, and writes it to an Excel spreadsheet.
