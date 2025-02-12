@@ -1,0 +1,173 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="892.0000000000001,1244.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Coursera  Online Courses &amp; Credentials F" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.2,589.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="16d94902-2008-422d-98c0-9276ef5ab739" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,340.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT search-autocomple…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,279.2" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="16d94902-2008-422d-98c0-9276ef5ab739" Text="UiPath[k(Enter)]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="coursera.org" CVScreenId="e430931c-9e13-49e3-af20-047361cdc2a2" ContentHash="Ml4OQQpoR0SBwoXni6iUDQ" CvElementArea="449, 261, 600, 58" CvType="InputBox" DesignTimeRectangle="451, 263, 597, 55" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search-autocomplete-input' tag='INPUT' type='text' class='react-autosuggest__input' placeholder='What do you want to learn?' aaname='' /&gt;" Guid="9a82c448-e72e-41a5-869c-d4974c8c99ad" InformativeScreenshot="ca2cebd853c24b4ca4c5ce3dd08b4d49.png" Reference="SoQIysg31ki8GvUCYBtGLg/aJfxgyt4yku9x86BhkJz1w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coursera | Online Courses &amp;amp; Credentials From Top Educators. Join for Free' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" ContentHash="nf6nnS9OPUixtF4xGxlaSA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMUSURBVFhHxVdNaBNBFF5/LupBvehFBCt6UE969SLiRRQRSVOLKD2oVPTSXASpWBWKYsGLClYiehCpijcPgiho8eBKbZKapM1PsbFNbBojxm3+n+/NTshudnazSVPywUeWzJvvzc7M+1nJNhzh9ZJjoltyeh9JnR5ZcniT+FtkVJ9lNubwdDPblsH5bSeKu5EKEmySbN1sbtM4Kq+VnJ4hFMprhBtlHndkiGk1hBNjO3CiTyDYHEmLNG3BOb5X6hyfFwotiahJ2pagVS6L8wpR23Qn6JxsbPu2iwG4OhKHj/4MJP8WoVQGUHIlCPzMwuMPKThyKworu8RzGcmH8E7QZRFN4NzYMwHD7xagSB7rwB/LwqGbEaEOI/nSQQ0109u+2xWE6V85Lm8PZVznjVcJoR4yrw9RNc5FhrD9UgASfwpctnEMvjZdhFt1TlnLJMmsPumFrxGFSxkRTxdgNJgB749F06PJZEvs3gj0FTVjUuo0DjL2Dse4jB7k8OD1CKzQ2G4++x3uvplnl5JAR/Ds02/Y0uvXaepIqZ3ndqHB5GxWVdNgNJCBdad9QnvimXszIIcV2N8fEo7rSL7xQTYMIPe4JrnLKhYx3LZesHgjTu3O1KGMR8AqmWGw5/4Md1sFbanItmmSb3ygkmoYvPJ8jrutou/JrMFuiSxaLCDO3VbherocC2jgCEY+pw12SyI/AtuXMFcos8QkstdyE4ak6H8B8RJahGEQC0wtKDFtwLogsieeexhj0TLwMgFrTpmHKyMLQ4tEdB7FRJiay8Kx21FYpal6FJ4P3iZZAqogivXj+J1pnaaO5NsyFXd54UvIPBWn/xVhLKpAKJ7TOdaCMuO+y1MGbSRPxQSLYtSBeTyBOb9Z9GM0iXSRvBgR6pTjXX1Btp2NgN6cQlmkh6wpx4QWNiQ+LFYHBsJCHUZDQ0Kw2ZJ1YBheexFnRSmFLRmdPbVkfowY9/sUHB7Elswpnsto2pIR2tqUVtDWtrwCWqWN47BN0qr75rVQ70SbPs20UEO0DR+ntaCsRalTrR0t+jyXpP96A1+coXLC9gAAAABJRU5ErkJggg==" InformativeScreenshot="f75a79552efbbc2219ea17471e775dcf.jpg" Reference="SoQIysg31ki8GvUCYBtGLg/ejplznIng0iLIWYos3vQNg" Selector="&lt;html app='msedge.exe' title='Coursera | Online Courses &amp;amp; Credentials From Top Educators. Join for Free' /&gt;" Url="https://www.coursera.org/?irclickid=WMC3nlyYGxyPW9vWPsQgnRchUkszTJRpuQNQQI0&amp;irgwc=1&amp;utm_medium=partners&amp;utm_source=impact&amp;utm_campaign=2235978&amp;utm_content=b2c" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Top UiPath Courses - Learn UiPath Online" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.2,492.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="a53e78f0-c190-4bf3-a469-abfa658ee2a1" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,244" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Course Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Course Name Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Course Price'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182.4" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="a53e78f0-c190-4bf3-a469-abfa658ee2a1" Version="V4">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.coursera.org/search?query=UiPath&amp;irclickid=WMC3nlyYGxyPW9vWPsQgnRchUkszTJRpuQNQQI0&amp;irgwc=1&amp;utm_medium=partners&amp;utm_source=impact&amp;utm_campaign=2235978&amp;utm_content=b2c" DesignTimeRectangle="543, 472, 1256, 2245" DesignTimeScaleFactor="1.25" ElementType="List" FullSelectorArgument="&lt;webctrl parentid='main' tag='UL' /&gt;" Guid="7120c32b-1f37-46e5-9668-0e9380e362af" InformativeScreenshot="ec96c951ec4483cac03c852e62ebc99b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Top UiPath Courses - Learn UiPath Online' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMUSURBVFhHxVdNaBNBFF5/LupBvehFBCt6UE969SLiRRQRSVOLKD2oVPTSXASpWBWKYsGLClYiehCpijcPgiho8eBKbZKapM1PsbFNbBojxm3+n+/NTshudnazSVPywUeWzJvvzc7M+1nJNhzh9ZJjoltyeh9JnR5ZcniT+FtkVJ9lNubwdDPblsH5bSeKu5EKEmySbN1sbtM4Kq+VnJ4hFMprhBtlHndkiGk1hBNjO3CiTyDYHEmLNG3BOb5X6hyfFwotiahJ2pagVS6L8wpR23Qn6JxsbPu2iwG4OhKHj/4MJP8WoVQGUHIlCPzMwuMPKThyKworu8RzGcmH8E7QZRFN4NzYMwHD7xagSB7rwB/LwqGbEaEOI/nSQQ0109u+2xWE6V85Lm8PZVznjVcJoR4yrw9RNc5FhrD9UgASfwpctnEMvjZdhFt1TlnLJMmsPumFrxGFSxkRTxdgNJgB749F06PJZEvs3gj0FTVjUuo0DjL2Dse4jB7k8OD1CKzQ2G4++x3uvplnl5JAR/Ds02/Y0uvXaepIqZ3ndqHB5GxWVdNgNJCBdad9QnvimXszIIcV2N8fEo7rSL7xQTYMIPe4JrnLKhYx3LZesHgjTu3O1KGMR8AqmWGw5/4Md1sFbanItmmSb3ygkmoYvPJ8jrutou/JrMFuiSxaLCDO3VbherocC2jgCEY+pw12SyI/AtuXMFcos8QkstdyE4ak6H8B8RJahGEQC0wtKDFtwLogsieeexhj0TLwMgFrTpmHKyMLQ4tEdB7FRJiay8Kx21FYpal6FJ4P3iZZAqogivXj+J1pnaaO5NsyFXd54UvIPBWn/xVhLKpAKJ7TOdaCMuO+y1MGbSRPxQSLYtSBeTyBOb9Z9GM0iXSRvBgR6pTjXX1Btp2NgN6cQlmkh6wpx4QWNiQ+LFYHBsJCHUZDQ0Kw2ZJ1YBheexFnRSmFLRmdPbVkfowY9/sUHB7Elswpnsto2pIR2tqUVtDWtrwCWqWN47BN0qr75rVQ70SbPs20UEO0DR+ntaCsRalTrR0t+jyXpP96A1+coXLC9gAAAABJRU5ErkJggg==" InformativeScreenshot="caea63d47ed0e6bb53aef3d00ac75d6c.jpg" Selector="&lt;html app='msedge.exe' title='Top UiPath Courses - Learn UiPath Online' /&gt;" Url="https://www.coursera.org/search?query=UiPath&amp;irclickid=WMC3nlyYGxyPW9vWPsQgnRchUkszTJRpuQNQQI0&amp;irgwc=1&amp;utm_medium=partners&amp;utm_source=impact&amp;utm_campaign=2235978&amp;utm_content=b2c" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="483.2,139.2" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="UiPath Courses" WorkbookPath="C:\Users\Mike\OneDrive\Documents\UiPath\CAP class\UiPath-Courses.xlsx" />
+  </Sequence>
+</Activity>
